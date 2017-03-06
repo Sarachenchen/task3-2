@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 600px;
+}
+
+.header {
+    text-align: center;
+    margin: 38px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.doraemon {
+    margin-left: 346px;
+    margin-top: 100px;
+}
+
+
+/*头部形状及其背景*/
+
+.head {
+    width: 320px;
+    height: 320px;
+    border: 2px solid #555;
+    background-color: #07bbee;
+    border-radius: 150px;
+    box-shadow: -2px 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+
+/*脸部*/
+
+.face {
+    position: relative;
+    z-index: 2;
+    /*脸在头部背景上面*/
+}
+
+
+/*白色脸颊*/
+
+.white {
+    background-color: #f5f4f0;
+    height: 190px;
+    width: 226px;
+    border-radius: 113px;
+    position: absolute;
+    top: 90px;
+    left: 51px;
+    border: 2px solid #0e0e0e;
+}
+
+
+/*眼睛*/
+
+.eyes {
+    position: relative;
+    z-index: 3;
+    animation: action 2s linear infinite;
+    -webkit-animation: action 2s linear infinite;
+    -moz-animation: action 2s linear infinite;
+    -o-animation: action 2s linear infinite;
+    -ms-animation: action 2s linear infinite;
+}
+
+.left_eye,
+.right_eye {
+    position: absolute;
+    width: 50px;
+    height: 61px;
+    border: 2px solid #0e0e0e;
+    border-radius: 25px;
+    top: 63px;
+    background-color: #fdfeff;
+}
+
+.left_eye {
+    left: 107px;
+}
+
+.right_eye {
+    right: 109px;
+}
+
+.black_bleft,
+.black_bright {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #121313;
+    position: absolute;
+    top: 34px;
+}
+
+.black_bright {
+    left: 6px;
+}
+
+.black_bleft {
+    right: 6px;
+}
+
+
+/*鼻子*/
+
+.nose {
+    position: absolute;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #191919;
+    border-radius: 10px;
+    background-color: #c93300;
+    top: 119px;
+    right: 150px;
+}
+
+
+/*鼻子竖线*/
+
+.line {
+    width: 2px;
+    height: 112px;
+    background-color: #1b1a1a;
+    position: absolute;
+    z-index: 3;
+    top: 140px;
+    left: 158px;
+}
+
+.mouth {
+    width: 190px;
+    height: 412px;
+    border-bottom: 3px solid #333;
+    border-radius: 120px;
+    position: absolute;
+    top: -160px;
+    left: 65px;
+}
+
+
+/*胡须*/
+
+.whiskers {
+    width: 210px;
+    height: 63px;
+    background-color: #f5f4f0;
+    position: absolute;
+    z-index: 2;
+    top: 154px;
+    left: 58px;
+}
+
+.whiskers div {
+    width: 2px;
+    height: 55px;
+    background: #4a4948;
+}
+
+.left_one {
+    position: absolute;
+    left: 34px;
+    transform: rotateZ(-57deg);
+    top: -20px;
+}
+
+.left_two {
+    position: absolute;
+    left: 30px;
+    transform: rotateZ(-90deg);
+    top: 3px;
+}
+
+.left_three {
+    position: absolute;
+    left: 34px;
+    transform: rotateZ(-123deg);
+    top: 26px;
+}
+
+.right_one {
+    position: absolute;
+    right: 34px;
+    transform: rotateZ(57deg);
+    top: -20px;
+}
+
+.right_two {
+    position: absolute;
+    right: 30px;
+    transform: rotateZ(90deg);
+    top: 3px;
+}
+
+.right_three {
+    position: absolute;
+    right: 34px;
+    transform: rotateZ(123deg);
+    top: 26px;
+}
+
+
+/*动画设置*/
+
+@keyframes action {
+    0% {
+        margin: 0 0 0 0;
+    }
+    25% {
+        margin: -22px 0 0 0;
+    }
+    50% {
+        margin: -22px 0 0 5px;
+    }
+    75% {
+        margin: -22px 10px 0 0;
+    }
+    90% {
+        margin: -22px 0 0 0;
+    }
+    100% {
+        margin: 0 0 0 0;
+    }
+}
+
+@-webkit-keyframes action {
+    0% {
+        margin: 0 0 0 0;
+    }
+    25% {
+        margin: -22px 0 0 0;
+    }
+    50% {
+        margin: -22px 0 0 5px;
+    }
+    75% {
+        margin: -22px 10px 0 0;
+    }
+    90% {
+        margin: -22px 0 0 0;
+    }
+    100% {
+        margin: 0 0 0 0;
+    }
+}
+
+@-moz-keyframes action {
+    0% {
+        margin: 0 0 0 0;
+    }
+    25% {
+        margin: -22px 0 0 0;
+    }
+    50% {
+        margin: -22px 0 0 5px;
+    }
+    75% {
+        margin: -22px 10px 0 0;
+    }
+    90% {
+        margin: -22px 0 0 0;
+    }
+    100% {
+        margin: 0 0 0 0;
+    }
+}
+
+@-o-keyframes action {
+    0% {
+        margin: 0 0 0 0;
+    }
+    25% {
+        margin: -22px 0 0 0;
+    }
+    50% {
+        margin: -22px 0 0 5px;
+    }
+    75% {
+        margin: -22px 10px 0 0;
+    }
+    90% {
+        margin: -22px 0 0 0;
+    }
+    100% {
+        margin: 0 0 0 0;
+    }
+}
